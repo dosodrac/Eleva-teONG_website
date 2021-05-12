@@ -1,0 +1,502 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+}
+/*----- Global ------*/
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+#main {
+	width: 100%;
+	padding-top: 5px;
+}
+/* Submit and Send buttons effects. Credit to Ian Lunn @ http://ianlunn.github.io/Hover/ */
+
+.hvr-sweep-to-right {
+	height: 38px;
+	background: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+/* hover effect */
+
+.hvr-sweep-to-right {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #61a60f;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+	color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+/* Bounce To Top */
+
+.hvr-bounce-to-top {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.hvr-bounce-to-top:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #61a60f;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+	color: white;
+}
+.hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.bckg {
+	padding: 15px;
+	background: #0099ff;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+/* Header **/
+
+header {
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+	border-right: 1px solid #bbb;
+	text-align: center;
+}
+header li:last-child {
+	border-right: none;
+}
+header #ong-name {
+	float: left;
+}
+header #ong-name h1 {
+	margin: 0;
+	text-align: center;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+}
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+header .highlight, header .current a {
+	color: #0099ff;
+	font-weight: bold;
+}
+header .hlight-1 {
+	color: #61a60f;
+}
+header a:hover {
+	color: #ffffff;
+}
+header .current a:hover {
+	color: #61a60f;
+}
+/* Showcase */
+
+#welcometext {
+	height: 80vh;
+	background-image: url("../img/volunteer2.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #ffffff;
+}
+#welcometext h2 {
+	margin-top: 30vh;
+	font-size: 5vw;
+	margin-bottom: 10px;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 8px #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+#welcometext h3 {
+	font-size: 2vw;
+	text-shadow: 2px 2px 8px #000000;
+}
+/* Newsletter */
+
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background: #35424a
+}
+#newsletter h2 {
+	float: left;
+}
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+/* Boxes */
+
+#boxes {
+	margin-top: 20px;
+}
+#boxes .box {
+	float: left;
+	text-align: justify;
+	width: 30%;
+	padding: 10px;
+}
+/* Sidebar */
+
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+aside#sidebar .contact input, aside#sidebar .contact textarea {
+	width: 90%;
+	padding: 5px;
+}
+/* 02_about-us.html*/
+
+.page-title {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 26px;
+	text-align: center;
+	color: #0099ff;
+	padding-top: 3%;
+}
+.page3container p {
+	margin: 0px 100px;
+	text-align: justify;
+}
+/* 03_what-we-do.html*/
+
+.pagecontainer {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	text-align: justify;
+}
+#boxes .box img {
+	border: 1px solid #DADADA;
+	border-radius: 4px;
+	padding: 5px;
+	width: 100%;
+	height: auto;
+	transition: transform .3s;
+	/* Animation */
+}
+#boxes .box img:hover {
+	-ms-transform: scale(1.1);
+	/* IE 9 */
+	-webkit-transform: scale(1.1);
+	/* Safari 3-8 */
+	transform: scale(1.1);
+}
+/* 04_aget-involved.html*/
+
+#article#main-col{
+  width:65%;
+}
+.calendar {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border: solid 1px #777;
+}
+/* 05_contacts.html*/
+
+.mapbox {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+iframe {
+	width: 100%;
+	height: 400px;
+	frameborder: 0;
+	border: 0;
+	allowfullscreen: " ";
+}
+/* footer*/
+
+footer {
+	padding: 20px;
+	color: #ffffff;
+	background-color: #61a60f;
+	text-align: center;
+}
+/*<----- Responsiveness ----->*/
+
+/* Media Queries */
+
+/* print styles */
+
+@media print {
+	body {
+		margin: 0;
+		color: #000;
+		background-color: #fff;
+	}
+	header, footer, aside, nav, form, iframe, #newsletter {
+		display: none !important;
+	}
+	.page-title {
+		color: #000000;
+	}
+	* {
+		background-image: none !important;
+	}
+	img, svg {
+		display: none !important;
+	}
+	img.print, svg.print {
+		display: block;
+		max-width: 100%;
+	}
+	.container {
+		width: 90%;
+		margin: 0px;
+		padding: 0px;
+	}
+	* {
+		color: #000;
+		background-color: #fff;
+	}
+	a:after {
+		content: "( "attr(href)" )";
+	}
+}
+@page {
+	margin-top: 2cm;
+	margin-bottom: 2cm;
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+/* Tablet screen queries*/
+
+@media(max-width: 768px) {
+	header #ong-name, #newsletter h2, #newsletter form, #boxes .box, article#main-col, aside#sidebar {
+		float: none;
+		text-align: justify;
+		width: 100%;
+	}
+	header {
+		padding: 5px;
+		position: fixed;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#showcase h1 {
+		margin-top: 40px;
+	}
+	#newsletter button, .contact button {
+		display: block;
+		width: 100%;
+	}
+	#newsletter form input[type="email"], .contact input, .contact textarea {
+		width: 95%;
+		margin-bottom: 5px;
+	}
+	header li {
+		padding: 0px 5px;
+		border-right: none;
+	}
+	header .current a {
+		border-right: 2px solid #bbb;
+		padding-right: 5px;
+	}
+	#boxes {
+		margin-top: 0px;
+	}
+	.page-title {
+		margin-top: 40vw;
+	}
+	#welcometext {
+		padding-top: 25vh;
+	}
+}
+/*Modal Images*/
+
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#myImg:hover {
+	opacity: 0.7;
+}
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Black w/ opacity */
+}
+/* Modal Content (image) */
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+/* Caption of Modal Image */
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+/* Add Animation */
+
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+@keyframes zoom {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(1)
+	}
+}
+/* The Close Button */
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}

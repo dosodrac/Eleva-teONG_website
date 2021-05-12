@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Keywords" content="ong,eleva-te,volunteer">
+		<meta name="author" content="David Cardoso">
+        <title>Eleva-te# ONG | About Us</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+	<body>
+		<header>
+		<div class="container">
+			<div id="ong-name">
+				<h1><span class="hlight-1">Eleva-te#</span> ONG</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="hvr-bounce-to-top"><a href="index.html">Home</a></li>
+					<li class="current"><a href="02_about-us.html">About us</a></li>
+					<li class="hvr-bounce-to-top"><a href="03_what-we-do.html">What we do</a></li>
+					<li class="hvr-bounce-to-top"><a href="04_get-involved.html">Get involved</a></li>
+					<li class="hvr-bounce-to-top"><a href="05_contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+		<section id="boxes">
+			<div class="container">
+				<div class="box">
+					<h2 class="page-title">Hi there!</h2>
+					<p>We are Eleva-te Associação Cívico-cultural, a Portuguese young non-profit association of Quinta do Conde created
+					on October 1st, 2010 with the aim of restoring a sense of community among the inhabitants of our village, through
+					sharing personal knowledge, from voluntary actions promoted to and from the population.<br>
+					Welcome to our website. Here you can find out all about Eleva-te#: who we are, what we want, how we do it and how
+					you can participate and/or help us.</p><a href="img/vertical.logo.jpg"><img alt="Eleva-te# vertical logo version" src="img/vertical.logo.jpg"></a></div>
+				<div class="box">
+					<h2 class="page-title">The beginning</h2><img alt="Eleva-te# first photo after the group brainstorm" src=
+					"img/about-us.beggining.png">
+					<p>Hot summer nights were the days when it all began. One night we decided that we no longer wanted to sit down to
+					talk badly. Something has unleashed a fighting spirit, a desire to change something, to take action and plan
+					something bigger for our planet! Among this group of friends, ideas began to come up one after another and in no
+					time, we would meet weekly in the local park, Parque da Vila, for our snacks with natural juices.<br>
+					Well, such was the planning that a few weeks later the thing was starting to take shape and on October 1st 2010,
+					the dream comes true and Eleva-te Associação Cívico-cultural is born.<br>
+					A new ONG was born, whose main objective is to share knowledge, experiences and personal experiences, thus seeking
+					to promote a greater and better sense of community among the inhabitants of Quinta do Conde village, through the
+					promotion of the most varied types of volunteer actions, from and for the population, such as workshops,
+					exhibitions, training, among many other ways.</p>
+				</div>
+				<div class="box">
+					<h2 class="page-title">Our mission</h2>
+					<p>Difundir o espírito comunitário de e para a comunidade local, através das mais variadas formas de partilha de
+					conhecimentos e de saber, para revitalizar o saber, cultivando a aprendizagem de pessoa para pessoa com o intuito de
+					congregar e juntar a população.</p><img alt="Eleva-te# group photo" id="myImg" src="img/about-us.mission.png">
+				</div>
+			</div>
+		</section>
+		<section id="newsletter">
+			<div class="container">
+				<h2>Subscribe to our newsletter</h2>
+				<form>
+					<input placeholder="Enter email here" type="email"> <button class="hvr-sweep-to-right" type=
+					"submit">Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<!-- The Modal -->
+		<div class="modal" id="myModal">
+			<span class="close">&times;</span> <img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+		<script>
+						  // Get the modal
+						  var modal = document.getElementById("myModal");
+
+						  // Get the image and insert it inside the modal - use its "alt" text as a caption
+						  var img = document.getElementById("myImg");
+						  var modalImg = document.getElementById("img01");
+						  var captionText = document.getElementById("caption");
+						  img.onclick = function(){
+						  modal.style.display = "block";
+						  modalImg.src = this.src;
+						  captionText.innerHTML = this.alt;
+						  }
+
+						  // Get the <span> element that closes the modal
+						  var span = document.getElementsByClassName("close")[0];
+
+						  // When the user clicks on <span> (x), close the modal
+						  span.onclick = function() { 
+						  modal.style.display = "none";
+						  }
+		</script>
+		<footer>Eleva-te# ONG, Copyright &copy; 2020</footer>
+	</body>
+</html>
