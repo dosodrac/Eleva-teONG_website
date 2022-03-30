@@ -2,7 +2,7 @@
 
 This website was created as my personal website project on my 1st year at my Bsc Computer Science degree.</br>
 I have developed this website aiming for:
-* responsiveness, the website is full responsive to difference screen sizes
+* responsiveness, the website is full responsive to different screen sizes
 * colour scheme, color palette chosen to engage the user while aiming for 
 * user interaction, through the use of reacting elements such as the navigation bar and all the images
 * webpage printing, as I have used media queries to optimise the print
@@ -11,7 +11,8 @@ Additionally, I have checked my website at [W3C Markup Validation Service](https
 
 -----
 
-### Live IGOR version: https://www.doc.gold.ac.uk/~dcard001/website/
+### Live version: 
+https://www.doc.gold.ac.uk/~dcard001/website/
 
 -----
 
